@@ -94,11 +94,7 @@
       <artifactId>jstl</artifactId>
       <version>${jstlVersion}</version>
     </dependency>
-    <dependency>
-      <groupId>taglibs</groupId>
-      <artifactId>standard</artifactId>
-      <version>${taglibVersion}</version>
-    </dependency>
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
