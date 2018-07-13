@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -16,7 +17,7 @@ import java.util.Date;
 @Setter
 @Getter
 @Table(name="user")
-public class User {
+public class User implements Serializable {
     @Id
     @GeneratedValue
     @Column (name = "userid")
@@ -59,4 +60,10 @@ public class User {
 
     @Column (name = "money" )
     private double money;
+
+    @Column( name ="create_time")
+    private Date creatTime;
+
+    @Column( name ="update_time")
+    private Date updateTime;
 }
